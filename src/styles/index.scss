@@ -11,7 +11,7 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
-.btn{
+/*.btn{
     border-radius: 150%;
     height: 70px;
     width: 70px;
@@ -32,7 +32,7 @@
     box-sizing: border-box;
 }*/
 
-.row:not(:last-child){
+/*.row:not(:last-child){
 height: 200px;
 border-bottom: 2px solid black;
 
@@ -48,4 +48,18 @@ border-bottom: 2px solid black;
 .cell{
     text-align: center;
     padding-top: 50px;
+}*/
+.container {
+    background-color: grey;
+    width: 600px;
+    height: 600px;
+}
+.row:not(:last-child){
+    height: 200px;
+    border-bottom: 2px solid white;}
+
+.col:not(:last-child){
+    height: 200px;
+    width: 200px;
+    border-right: 2px solid white;
 }
