@@ -7,6 +7,10 @@ export const Tablero = () => {
 	const [cuadrados, setCuadrados] = useState(arreglosCuadradosVacio);
 	const [turno, setTurno] = useState(true);
 
+	const restart = () => {
+		setCuadrados(["", "", "", "", "", "", "", "", ""]);
+	};
+
 	function calculateWinner(squares) {
 		const lines = [
 			[0, 1, 2],
@@ -52,7 +56,7 @@ export const Tablero = () => {
 	return (
 		<div className="container">
 			<Ganador />
-			<button id="startover" className="rounded mb-3">
+			<button id="startover" className="rounded mb-3" onClick={restart}>
 				Start Over
 			</button>
 			<div className="row">
