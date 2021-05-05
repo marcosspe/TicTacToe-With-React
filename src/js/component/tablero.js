@@ -41,15 +41,20 @@ export const Tablero = () => {
 	const Ganador = () => {
 		let alguienGano = calculateWinner(cuadrados);
 		if (alguienGano) {
-			return <h2>{alguienGano} WINS</h2>;
+			return <h2 className="text-success">{alguienGano} WINS</h2>;
 		} else {
-			return <h2>{turno ? "X" : "O"} is next</h2>;
+			return (
+				<h2 className="text-white">It is {turno ? "X" : "O"} turn</h2>
+			);
 		}
 	};
 
 	return (
 		<div className="container">
 			<Ganador />
+			<button id="startover" className="rounded mb-3">
+				Start Over
+			</button>
 			<div className="row">
 				<Cuadrado value={cuadrados[0]} onClick={() => jugar(0)} />
 				<Cuadrado value={cuadrados[1]} onClick={() => jugar(1)} />

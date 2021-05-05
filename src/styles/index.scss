@@ -11,55 +11,47 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
-/*.btn{
-    border-radius: 150%;
-    height: 70px;
-    width: 70px;
-    margin-left: 635px;
-    margin-bottom: 35px;
-    box-shadow: coral;
+#boton{
+    background-color: rgb(49, 167, 214)
 }
-.contenedor{
-    margin-left: 400px;
-    height: 600px;
-    width: 600px;
-    background-color: coral;
-    font-size: 70px;
-    box-shadow: 5px 10px 8px #888888;
-    }
-
-/* {
-    box-sizing: border-box;
-}*/
-
-/*.row:not(:last-child){
-height: 200px;
-border-bottom: 2px solid black;
-
+body{
+    background-color: rgb(66, 62, 62);
 }
-
-.cell:not(:last-child){
-    width: 200px;
-    height: 200px;
-    border-right: 2px solid black;
-    
-}
-
-.cell{
-    text-align: center;
-    padding-top: 50px;
-}*/
 .container {
-    background-color: grey;
     width: 600px;
     height: 600px;
 }
-.row:not(:last-child){
-    height: 200px;
-    border-bottom: 2px solid white;}
+h1{
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+h5{
+    text-align: center;
+}
+input{
+    text-align: center;
+}
+button{
+    width: 150px;
+    height: 150px;
+}
+#startover{
+    width: 100px;
+    height: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#start{
+    width: 100px;
+    height: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-.col:not(:last-child){
-    height: 200px;
-    width: 200px;
-    border-right: 2px solid white;
+#contstart{
+    height: 250px;
 }

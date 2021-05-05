@@ -1,4 +1,5 @@
 import React from "react";
+import { Login } from "./login.js";
 import { Cuadrado } from "./cuadrado.js";
 import { Tablero } from "./tablero.js";
 
@@ -6,7 +7,8 @@ import { Tablero } from "./tablero.js";
 export function Home() {
 	return (
 		<div>
-			<h1>Hola</h1>
+			<h1 className="text-white">Tic Tac Toe in React.js</h1>
+			<Login />
 			<Tablero />
 		</div>
 	);
